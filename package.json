@@ -1,0 +1,23 @@
+{
+  "name": "kylebreckenridge.com",
+  "title": "KyleBreckenridge.com",
+  "description": "Wordpress Theme for KyleBreckenridge.com, a Freelancer's site.",
+  "version": "0.1.0",
+  "homepage": "http://www.kylebreckenridge.com",
+  "author": {
+    "name": "Kyle Breckenridge",
+    "email": "contact@kylebreckenridge.com",
+    "url": "kylebreckenridge.com"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "matchdep": "~0.1.2",
+    "grunt-contrib-concat": "~0.1.2",
+    "grunt-contrib-uglify": "~0.1.1",
+    "grunt-contrib-cssmin": "~0.6.0",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-compass": "~0.6.0"
+  },
+  "keywords": []
+}

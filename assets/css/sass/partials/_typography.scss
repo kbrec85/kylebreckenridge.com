@@ -1,0 +1,191 @@
+.wrapper {
+    max-width: 50em;
+    margin: 2em auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $title-font-family;
+    color: $primary;
+    margin: 1em 0 .5em 0;
+}
+h1,h2,h3 {
+    font-weight: 600;
+}
+h1 {
+    margin-bottom: 1em;
+    font-size: 1em * nth($font-size, 2);
+    @include bp(venus){
+        font-size: 1em * nth($font-size, 1);
+        text-align: center;
+    }
+}
+h2 {
+    font-size: 1em * nth($font-size, 3);
+    @include bp(venus){
+        font-size: 1em * nth($font-size, 2);
+    }
+}
+h3 {
+    font-size: 1em * nth($font-size, 4);
+    @include bp(venus){
+        font-size: 1em * nth($font-size, 3);
+    }
+}
+h4 {
+    font-size: 1em * nth($font-size, 5);
+    @include bp(venus){
+        font-size: 1em * nth($font-size, 4);
+    }
+}
+h5 {
+    font-size: 1em * nth($font-size, 6);
+    @include bp(venus){
+        font-size: 1em * nth($font-size, 5);
+    }
+}
+h6 {
+    font-size: 1em * nth($font-size, 7);
+    @include bp(venus){
+        font-size: 1em * nth($font-size, 6);
+    }
+}
+
+blockquote {
+    margin: 1.5em;
+    font-family: $title-font-family;
+    font-size: 1em * nth($font-size, 5);
+    font-weight: 700;
+    font-style: italic;
+    position: relative;
+    @include bp(venus){
+        font-size: 1em * nth($font-size, 4);
+    }
+    &:before {
+        content: "\201C";
+        position: absolute;
+        left: -18px;
+        left: -2.5rem;
+        top: -2rem;
+        font-size: 4em;
+    }
+    cite {
+        text-align: right;
+        display: block;
+    }
+}
+
+p,ul,ol,dl,pre,code {
+    font-size: 1rem * nth($font-size, 7);
+    @include bp(venus){
+        font-size: 1rem * nth($font-size, 6);
+    }
+}
+
+a:not([data-icon]) {
+    color: $tertiary;
+    @include inline-block;
+    position: relative;
+    @include transition(color .3s .1s ease);
+    &:before {
+        position: absolute;
+        background-color: $tertiary;
+        display: block;
+        height: 0%;
+        left: -.15em;
+        right: -.15em;
+        bottom: 0;
+        z-index: -1;
+        content: "";
+        @include transition(height .3s ease);
+    }
+    &:hover {
+        color: white;
+        text-decoration: none;
+    }
+    &:hover:before {
+        height: 100%;
+    }
+}
+
+a.btn {
+    background-color: $tertiary;
+    padding: .5em 2em;
+    @include inline-block;
+    font-family: $title-font-family;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: white;
+    @include transition(background-color .3s ease);
+    text-decoration: none;
+    &:hover {
+        background-color: $secondary;
+    }
+    &:before {
+        display: none;
+    }
+}
+
+strong {
+    color: $secondary;
+}
+
+abbr {
+    cursor: help;
+}
+
+del {
+    color: $light-grey-text;
+}
+
+mark {
+    background: none;
+    color: white;
+    position: relative;
+    &:after{
+        position: absolute;
+        content: "";
+        left: -.15em;
+        right: -.15em;
+        top: 0;
+        bottom: 0;
+        background: $secondary;
+        z-index: -1;
+    }
+}
+
+dt {
+    font-weight: bold;
+    color: $primary;
+}
+
+ul ul, ol ol {
+    margin: 0 0 .2em 0;
+}
+
+.byline {
+    font-size: 1rem * nth($font-size, 8);
+    @include bp(venus){
+        font-size: 1rem * nth($font-size, 7);
+    }
+}
+.byline, .byline a {
+    color: $light-grey-text;
+    text-align: right;
+    margin-bottom: 0;
+}
+
+article > p:first-of-type:first-letter {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: $title-font-family;
+    float: left;
+    line-height: 1em;
+    margin-right: .1em;
+}
+
+pre:not([class]), code:not([class]) {
+    overflow: visible;
+    width: 100%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}

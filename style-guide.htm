@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <title>KyleBreckenridge.com Style Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/kylebreckenridge_com.css">
+    <link rel="stylesheet" href="assets/css/style-guide-only.css">
+    <script type="text/javascript" src="//use.typekit.net/azz1znj.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript" src="/wp-includes/js/jquery/jquery.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="<?php echo get_template_directory_uri();?>/assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="margin: 0 2em;"><div class="wrapper">
+    <section id="colors">
+        <h2 class="title">Colors</h2>
+        <div class="primary"></div><div class="secondary"></div><div class="tertiary"></div>
+    </section>
+    <section id="fonts">
+        <h2 class="title">Fonts</h2>
+        <p class="title">Title Font - Adelle: "adelle", Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;</p>
+        <p class="title-bold">Title Font Bold - Adelle: "adelle", Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;</p>
+        <p class="title-bold-italic">Title Font Bold Italic - Adelle: "adelle", Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;</p>
+        <p class="body">Body Text FF Dangy Pro - "ff-dagny-web-pro", Arial, "Helvetica Neue", Helvetica, sans-serif;</p>
+        <p class="body-italic">Body Text italic FF Dangy Pro - "ff-dagny-web-pro", Arial, "Helvetica Neue", Helvetica, sans-serif;</p>
+        <p class="body-bold">Body Text bold FF Dangy Pro - "ff-dagny-web-pro", Arial, "Helvetica Neue", Helvetica, sans-serif;</p>
+        <p class="body-bold-italic">Body Text bold italic FF Dangy Pro - "ff-dagny-web-pro", Arial, "Helvetica Neue", Helvetica, sans-serif;</p>
+    <section id="headings">
+        <h2 class="title">Headings</h2>
+        <h1>1st Level heading</h1>
+        <h2>2nd Level heading</h2>
+        <h3>3rd Level heading</h3>
+        <h4>4th Level heading</h4>
+        <h5>5th Level heading</h5>
+        <h6>6th Level heading</h6>
+    </section>
+    <section id="block-text">
+        <h2 class="title">Standard Block Level text</h2>
+        <p>This is a paragraph. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        <p>This is a second paragraph with the needed spacing. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        <blockquote>
+            <p>This is blockquoted text. These will typically be short and associated with a cite tag for the citation. Always use p tags inside consistancy.</p>
+            <cite>Author Name</cite>
+        </blockquote>
+        <pre>This is preformatted text. It will be used to wrap around a code element as its primary use. It can also be used if there is a need for un-styled text.</pre>
+    </section>
+    <section id="non-block-text">
+        <h2 class="title">Non-block Text</h2>
+        <ul>
+            <li><q>Quote!!</q> <cite>Author Name, citation</cite></li>
+            <li><strong>This text has strong emphasis</strong></li>
+            <li><em>This text has moderate emphasis</em></li>
+            <li><abbr title="Hypertext Markup Language">HTML</abbr> - thats an abbreviation.</li>
+            <li><del>This text has been removed</del></li>
+            <li><ins>This text has been inserted</ins></li>
+            <li><code>This is inline code</code></li>
+            <li>In order to properly test how superscript and subscript work, we need to include some text around it to see how line-heights are affected. H<sub>2</sub>O has subscript. 1<sup>st</sup> has supescript. In order to properly test how superscript and subscript work, we need to include some text around it to see how line-heights are affected.</li>
+            <li><dfn>Dfn</dfn> marks a term being identified. It should containt the item being defined and, optionally, a title attribute with the definition.</li>
+            <li><mark>This text is marked</mark> due to it's relevance in this context</li>
+            <li><s>This text is struck</s></li>
+            <li>Here, <a href="#">we have a link</a> that links places.</li>
+        </ul>
+    </section>
+    <section id="lists">
+        <h2 class="title">Lists</h2>
+        <ul>
+           <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+           <ul>
+              <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+              <li>Aliquam tincidunt mauris eu risus.</li>
+              <li>Vestibulum auctor dapibus neque.</li>
+           </ul>
+           </li>
+           <li>Aliquam tincidunt mauris eu risus.</li>
+           <li>Vestibulum auctor dapibus neque.</li>
+        </ul>
+        <ol>
+           <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+           <li>Aliquam tincidunt mauris eu risus.</li>
+           <li>Vestibulum auctor dapibus neque.</li>
+       </ol>
+       <dl>
+           <dt>Definition list</dt>
+           <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.</dd>
+           <dt>Lorem ipsum dolor sit amet</dt>
+           <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.</dd>
+        </dl>
+    </section>
+    <section id="forms">
+        <h2 class="title">Forms</h2>
+        <input type="text" placeholder="Text Input">
+        <textarea placeholder="Text area hint text"></textarea>
+        <select>
+            <optgroup label="Option Group">
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </optgroup>
+            <optgroup label="Option Group">
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </optgroup>
+        </select>
+        <div class="checkboxes">
+            <label for="checkbox1"><input type="checkbox" name="checkbox" id="checkbox1">Choice 1</label>
+            <label for="checkbox2"><input type="checkbox" name="checkbox" id="checkbox2">Choice 2</label>
+            <label for="checkbox3"><input type="checkbox" name="checkbox" id="checkbox3">Choice 3</label>
+        </div>
+        <div class="radio">
+            <label for="radio1"><input type="radio" name="radio" id="radio1">Choice 1</label>
+            <label for="radio2"><input type="radio" name="radio" id="radio2">Choice 2</label>
+            <label for="radio3"><input type="radio" name="radio" id="radio3">Choice 3</label>
+        </div>
+    </section>
+    <section id="images">
+        <h2 class="title">Images</h2>
+        <div class="caption alignleft" style="margin-top: 0;">
+            <img src="http://fillmurray.com/300/200">
+            <p>This is an image caption. It should be kept short, but can go longer if needed.</p>
+        </div>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        <img src="http://fillmurray.com/1000/200" class="aligncenter">
+    </section>
+    <section id="one-off">
+        <h2 class="title">Standalone Molecules</h2>
+        <hr />
+        <pre rel="Javascript">
+            <code class="language-javascript">
+Prism.languages.css = {
+    'comment': /\/\*[\w\W]*?\*\//g,
+    'atrule': {
+        pattern: /@[\w-]+?.*?(;|(?=\s*{))/gi,
+        inside: {
+            'punctuation': /[;:]/g
+        }
+    },
+    'url': /url\((["']?).*?\1\)/gi,
+    'selector': /[^\{\}\s][^\{\};]*(?=\s*\{)/g,
+    'property': /(\b|\B)[\w-]+(?=\s*:)/ig,
+    'string': /("|')(\\?.)*?\1/g,
+    'important': /\B!important\b/gi,
+    'punctuation': /[\{\};:]/g,
+    'function': /[-a-z0-9]+(?=\()/ig
+};
+            </code>
+        </pre>
+        <p class="byline">By <a href="https://plus.google.com/+KyleBreckenridge" rel="author" itemprop="author" target="_blank">Kyle Breckenridge</a> <time datetime="2014-07-22" itemprop="datePublished">July 22<sup>nd</sup>, 2014</datetime> | <span itemprop="keywords"><a href="#">style tile</a>, <a href=#>Web Design</a></span> | <a href="#" itemprop="url">permalink</a></p>
+        <img src="images/KyleBreckenridge-logo.svg" alt="KyleBreckenridge.com Logo" />
+        <img src="images/KyleBreckenridge-icon.svg" alt="KyleBreckenridge.com Icon" class="kbico" /><span class="icontext">^ To be used for all site icons (favicon, home icon, ect) ^</span>
+        <p>
+            <a href="#" data-icon="S">Design</a>
+            <a href="#" data-icon="V">Development</a>
+            <a href="#" data-icon="w">Wordpress</a>
+            <a href="#" class="responsive" data-icon>
+                <span data-icon="4"></span>
+                <span data-icon="3"></span>
+                <span data-icon="2"></span>
+                <span data-icon="1"></span>
+                Responsive
+            </a>
+            <a href="#" data-icon="C">Category</a>
+            <a href="#" data-icon="T">Tags</a>
+            <a href="#" data-icon="4">Desktop</a>
+            <a href="#" data-icon="3">Laptop</a>
+            <a href="#" data-icon="2">Tablet</a>
+            <a href="#" data-icon="1">Mobile</a>
+            <a href="#" data-icon="H">Home</a>
+            <a href="#" data-icon="e">Email</a>
+            <span data-icon="L">Loading</span>
+            <a href="#" data-icon="b">Behance</a>
+            <a href="#" data-icon="g">Google Plus</a>
+            <a href="#" data-icon="f">Facebook</a>
+            <a href="#" data-icon="i">Instagram</a>
+            <a href="#" data-icon="t">Twitter</a>
+            <a href="#" data-icon="y">Youtube</a>
+            <a href="#" data-icon="d">Dribble</a>
+            <a href="#" data-icon="s">Steam</a>
+            <a href="#" data-icon="h">Github</a>
+            <a href="#" data-icon="l">LinkedIn</a>
+            <a href="#" data-icon="p">Pinterest</a>
+            <a href="#" data-icon="q">FourSquare</a>
+        </p>
+        <nav role="navigation">
+            <ul>
+                <li><a href="#">Home</a></li><li><a href="#">About</a></li><li><a href="#">Blog</a></li><li><a href="#">Portfolio</a></li>
+            </ul>
+        </nav>
+        <p><a href="#" class="btn">Button</a></p>
+    </section>
+    <section id="molecules">
+        <h2 class="title">Molecules</h2>
+        <div class="col2">
+            <img src="http://fillmurray.com/600/250">
+            <h2>Article Title</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. <a href="#">Read More >></a></p>
+        </div><div class="col2">
+            <h2>Article Title</h2>
+            <p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. <a href="#">Read More >></a></p>
+        </div>
+        <div class="col2">
+            <img src="http://fillmurray.com/600/250">
+            <h2>Article Title</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. <a href="#">Read More >></a></p>
+        </div><div class="col2">
+            <img src="http://fillmurray.com/600/250">
+            <h2>Article Title</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. <a href="#">Read More >></a></p>
+        </div>
+        <footer class="sitefooter">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li><li><a href="#">About</a></li><li><a href="#">Blog</a></li><li><a href="#">Portfolio</a></li>
+                </ul>
+            </nav>
+            <div class="col2">
+                <h4>Connect: Professional</h4>
+                <a href="https://www.facebook.com/pages/KyleBreckenridgecom/901395023209557" target="_blank" data-icon="f"></a>
+                <a href="https://twitter.com/kbrec85" target="_blank" data-icon="t"></a>
+                <a href="https://plus.google.com/+KyleBreckenridge" target="_blank" data-icon="g"></a>
+                <a href="https://github.com/kbrec85" target="_blank" data-icon="h"></a>
+                <a href="https://www.behance.net/kbrec85" target="_blank" data-icon="b"></a>
+                <a href="www.linkedin.com/in/kylebreckenridge/" target="_blank" data-icon="l"></a>
+                <a href="/contact" data-icon="e"></a>
+            </div>
+            <div class="col2">
+                <h4>Connect: Personal</h4>
+                <a href="http://instagram.com/kbrec85" target="_blank" data-icon="i"></a>
+                <a href="https://www.youtube.com/user/kbrec1985" target="_blank" data-icon="y"></a>
+                <a href="http://steamcommunity.com/id/Will_Wallace85/" target="_blank" data-icon="s"></a>
+                <a href="http://www.pinterest.com/kbrec85/" target="_blank" data-icon="p"></a>
+                <a href="https://foursquare.com/kbrec85" target="_blank" data-icon="q"></a>
+            </div>
+            <p>&copy; 2014 Kyle Breckenridge</p>
+        </footer>
+        <header role="banner">
+            <img src="images/KyleBreckenridge-logo.svg" alt="KyleBreckenridge.com Logo" />
+            <nav role="navigation">
+                <ul>
+                    <li><a href="#">Home</a></li><li><a href="#">About</a></li><li><a href="#">Blog</a></li><li><a href="#">Portfolio</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+</div>
+<script src="assets/js/kylebreckenridge_com.js"></script>
+</body>
+</html>

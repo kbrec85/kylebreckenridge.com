@@ -1,0 +1,121 @@
+/* You'll need to update this with the proper pathing and font name. This is the template.
+   Hopefully I'll be able to update this in the future to tie into the Original Grunt Install
+*/
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('/wp-content/themes/kylebreckenridge.com/fonts/icomoon.eot');
+  src: local('?'), url("/wp-content/themes/kylebreckenridge.com/fonts/icomoon.woff") format("woff"), url("/wp-content/themes/kylebreckenridge.com/fonts/icomoon.otf") format("opentype"), url("/wp-content/themes/kylebreckenridge.com/fonts/icomoon.svg#icomoon") format("svg");
+}
+@media screen and (max-device-width: 480px) {
+  @font-face {
+    font-family: 'icomoon';
+    src: url('/wp-content/themes/kylebreckenridge.com/fonts/icomoon.eot');
+    src: url('/wp-content/themes/kylebreckenridge.com/fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('/wp-content/themes/kylebreckenridge.com/fonts/icomoon.svg#icomoon') format('svg'), url('/wp-content/themes/kylebreckenridge.com/fonts/icomoon.woff') format('woff'), url('/wp-content/themes/kylebreckenridge.com/fonts/icomoon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+[data-icon]{
+    color: $secondary;
+    @include inline-block;
+    vertical-align: baseline;
+    margin-right: -.25em;
+    padding: .5em;
+    @include transition(color .3s ease);
+}
+
+[data-icon]:before {
+    font-family: 'icomoon';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 2em;
+    @include inline-block;
+    vertical-align: baseline;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[data-icon]:hover, [data-icon]:focus, a[data-icon]:hover, a[data-icon]:focus, .responsive:hover span {
+    color: $primary;
+}
+
+.responsive {
+    color: $secondary;
+    position: relative;
+    min-width: 1em;
+    span {
+        display: block;
+        position: absolute;
+        &:before {
+            font-size: 1em;
+        }
+        &[data-icon="1"]{
+            left: .35em;
+            top: -1em;
+        }
+        &[data-icon="2"]{
+            left: 1.5em;
+            top: -1em;
+        }
+        &[data-icon="3"]{
+            left: 0;
+            top: 0;
+        }
+        &[data-icon="4"]{
+            left: 1.3em;
+            top: 0;
+        }
+    }
+}
+
+@include keyframes(loading) {
+    0% {@include transform(rotate(0deg));}
+    100% {@include transform(rotate(360deg));}
+}
+
+[data-icon="L"]:before{
+    @include animation(loading, 1s, infinite, linear);
+}
+
+[data-icon=f]:hover, [data-icon=f]:focus, a[data-icon=f]:hover, a[data-icon=f]:focus {
+	color: #3B5998;
+}
+[data-icon=t]:hover, [data-icon=t]:focus, a[data-icon=t]:hover, a[data-icon=t]:focus {
+	color: #4099FF;
+}
+[data-icon=g]:hover, [data-icon=g]:focus, a[data-icon=g]:hover, a[data-icon=g]:focus {
+	color: #dd4b39;
+}
+[data-icon=y]:hover, [data-icon=y]:focus, a[data-icon=y]:hover, a[data-icon=y]:focus {
+	color: #c41200;
+}
+[data-icon=i]:hover, [data-icon=i]:focus, a[data-icon=i]:hover, a[data-icon=i]:focus {
+	color: #007fb3;
+}
+[data-icon=q]:hover, [data-icon=q]:focus, a[data-icon=q]:hover, a[data-icon=q]:focus {
+	color: #216aae;
+}
+[data-icon=u]:hover, [data-icon=u]:focus, a[data-icon=u]:hover, a[data-icon=u]:focus {
+  color: #CD332D;
+}
+[data-icon=d]:hover, [data-icon=d]:focus, a[data-icon=d]:hover, a[data-icon=d]:focus {
+  color: #C32361;
+}
+[data-icon=b]:hover, [data-icon=b]:focus, a[data-icon=b]:hover, a[data-icon=b]:focus, [data-icon=s]:hover, [data-icon=s]:focus, a[data-icon=s]:hover, a[data-icon=s]:focus,
+[data-icon=h]:hover, [data-icon=h]:focus, a[data-icon=h]:hover, a[data-icon=h]:focus {
+  color: black;
+}
+[data-icon=l]:hover, [data-icon=l]:focus, a[data-icon=l]:hover, a[data-icon=l]:focus {
+  color: #1A85BC;
+}
+[data-icon=p]:hover, [data-icon=p]:focus, a[data-icon=p]:hover, a[data-icon=p]:focus {
+  color: #CB2027;
+}

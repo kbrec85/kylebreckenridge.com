@@ -1,0 +1,52 @@
+[role="navigation"]{
+    text-align: center;
+    margin-top: 1em;
+    @include bp(venus) {
+        text-align: right;
+    }
+    @include bp(earth) {
+        @include inline-block;
+        vertical-align: middle;
+        width: 50%;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        & :first-child {
+            border-left: 0px;
+        }
+    }
+    li {
+        @include inline-block;
+        vertical-align: middle;
+        border-left: 1px solid $secondary;
+    }
+    a {
+        display: block;
+        padding: .5em 1em;
+        font-size: 1em * nth($font-size, 6);
+        @include bp(venus) {
+            font-size: 1em * nth($font-size, 4);
+        }
+        color: $primary;
+        text-decoration: none;
+        &:before {
+            width: 100%;
+            left: 0;
+        }
+    }
+}
+[role="banner"] {
+    margin: 1em;
+    & > img {
+        @include bp(venus) {
+            float: left;
+            width: 40%;
+        }
+        @include bp(earth) {
+            width: 48%;
+            @include inline-block;
+            vertical-align: middle;
+        }
+    }
+}

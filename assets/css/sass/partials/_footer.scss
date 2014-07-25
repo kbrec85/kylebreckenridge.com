@@ -1,0 +1,36 @@
+.sitefooter {
+    border-top: 5px solid $primary;
+    .col2 {
+        border-bottom: none;
+        a {
+            font-size: .7em;
+            @include bp(venus) {
+                font-size: 1em;
+            }
+        }
+    }
+    h4 {
+        margin-top: .5em;
+    }
+    nav {
+        text-align: center;
+        margin: 1em 1em 0 1em;
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            @include inline-block;
+            vertical-align: middle;
+        }
+        a {
+            padding: .5em 1em;
+            color: $primary;
+            text-decoration: none;
+            &:before {
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+}

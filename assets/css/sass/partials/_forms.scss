@@ -1,0 +1,31 @@
+input:not([type="checkbox"]):not([type="radio"]), textarea, select {
+    width: 100%;
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid $primary;
+    font-size: 1em * nth($font-size, 6);
+    @include bp(venus) {
+        font-size: 1em * nth($font-size, 5);
+    }
+}
+textarea {
+    height: 10em;
+    @include bp(venus) {
+        height: 5em;
+    }
+}
+.checkboxes, .radio {
+    label {
+        @include inline-block;
+        margin-left: 1.5em;
+        @include bp(venus) {
+            font-size: 1em * nth($font-size, 5);
+        }
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    input {
+        margin-right: .5em;
+    }
+}

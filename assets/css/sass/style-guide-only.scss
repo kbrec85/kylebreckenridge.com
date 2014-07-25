@@ -1,0 +1,88 @@
+@import "compass";
+@import "partials/variables";
+@import "partials/mixins";
+
+h2.title {
+    color: white;
+    background-color: $primary;
+    padding: .5em;
+}
+#colors {
+    div {
+        @include inline-block;
+        margin: 1em 2.5%;
+        width: 28.33333333333333%;
+        height: 9.833333333333333em;
+        position: relative;
+        &:after {
+            display: block;
+            position: absolute;
+            text-align: center;
+            background-color: white;
+            width: 100%;
+            height: 1.5em;
+            bottom: 0;
+        }
+        &.primary {
+            background-color: $primary;
+            &:after {
+                content: "#{$primary}";
+            }
+        }
+        &.secondary {
+            background-color: $secondary;
+            &:after {
+                content: "#{$secondary}";
+            }
+        }
+        &.tertiary {
+            background-color: $tertiary;
+            &:after {
+                content: "#{$tertiary}";
+            }
+        }
+    }
+}
+p {
+    &[class*='title'] {
+        font-family: $title-font-family;
+        font-weight: 600;
+        &[class*='bold']{
+            font-weight: 800;
+        }
+        &[class*='italic']{
+            font-style: italic;
+        }
+    }
+    &[class*='body'] {
+        font-family: $base-font-family;
+        &[class*='bold']{
+            font-weight: 800;
+        }
+        &[class*='italic']{
+            font-style: italic;
+        }
+    }
+}
+.icontext {
+    display: block;
+    text-align: center;
+}
+[data-icon]:before {
+    margin-right: .2em;
+}
+a.responsive {
+    padding-left: 3em;
+    color: $secondary;
+}
+a.responsive:before {
+    display: none;
+}
+[role="banner"] {
+    margin: 1em -1em;
+}
+@media (min-width: 37.5em) {
+    .caption {
+        max-width: 314px;
+    }
+}

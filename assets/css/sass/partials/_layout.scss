@@ -1,0 +1,84 @@
+img {
+	max-width: 100%;
+	display: block;
+	height: auto;
+}
+.aligncenter, .alignmiddle, .alignleft, .alignright {
+	margin: 1.1666em auto;
+	display: block;
+	&:first-child {
+		margin-top: 0;
+	}
+}
+.alignleft {
+	margin: 1.1666em 0;
+	width: 100%;
+	@include bp(mercury) {
+		float: left;
+		max-width: 50%;
+		width: auto;
+		margin: 1em 1.1666em 1em 0;
+	}
+}
+.alignright {
+	margin: 1.1666em 0;
+	width: 100%;
+	@include bp(mercury) {
+		float: right;
+		max-width: 50%;
+		width: auto;
+		margin: 1.1666em 0 1.1666em 1.1666em;
+	}
+}
+img[class*="align"], div[class*="align"] img {
+	padding: 5px;
+	background: white;
+	border: 2px solid $secondary;
+}
+.caption {
+	border-bottom: 1px solid $light-grey-text;
+	font-size: 1em * nth($font-size, 7);
+	font-style: italic;
+	p {
+		padding: 0 .25em;
+	}
+	img {
+		margin: 0 auto;
+	}
+}
+hr {
+	border: 0;
+	height: 1px;
+	background: $secondary;
+	@include background(linear-gradient(left, rgba(255,255,255,0), rgba($secondary,1), rgba(255,255,255,0)));
+}
+.kbico {
+	max-width: 12em;
+	margin: 1.5em auto;
+}
+.col2 {
+	margin: 1em;
+	@include bp(venus){
+		margin: 1em 2.5%;
+		@include inline-block;
+		vertical-align: top;
+		max-width: 45%;
+		p {
+			padding: 0 1em;
+		}
+		h2 {
+			margin: .5em 18px;
+			margin: .5em 1rem;
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+	@include bp(earth){
+		width: 23em;
+		margin: 1em;
+	}
+	img {
+		width: 100%;
+	}
+}
