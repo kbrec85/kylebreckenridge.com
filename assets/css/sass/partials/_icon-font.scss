@@ -37,6 +37,9 @@
     font-size: 2em;
     @include inline-block;
     vertical-align: baseline;
+    height: auto;
+    background-color: transparent;
+    position: static;
 
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;

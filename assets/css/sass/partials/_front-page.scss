@@ -1,0 +1,48 @@
+.hero {
+    background-color: $secondary;
+    padding: 2em 0;
+    font-size: 1em * nth($font-size, 4);
+    position: relative;
+    margin: 0;
+    text-align: center;
+    font-family: $base-font-family;
+    color: white;
+    @include box-shadow($primary 0 0 7em .5em inset);
+    @include bp(venus) {
+        font-size: 1em * nth($font-size, 2);
+        padding: 3em 1em;
+    }
+    @include bp(jupiter) {
+        font-size: 1em * nth($font-size, 1);
+    }
+    span[data-icon] {
+        display: block;
+        white-space: nowrap;
+        position: relative;
+        color: white;
+        z-index: 10;
+        &:before {
+            color: $primary;
+            color: rgba($primary, .5);
+            font-size: 2em;
+            display: block;
+            position: absolute;
+            left: 50%;
+            margin-left: -.5em;
+            z-index: -1;
+            bottom: .1em;
+            @include bp(venus) {
+                bottom: -.1em;
+                font-size: 1.5em;
+            }
+            @include bp(moon) {
+                font-size: 4em;
+                bottom: -.3em;
+            }
+        }
+        @include bp(venus) {
+            @include inline-block;
+            padding: 0 1em;
+        }
+    }
+}

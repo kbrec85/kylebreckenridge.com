@@ -1,4 +1,4 @@
-[role="navigation"]{
+nav[role="navigation"]{
     text-align: center;
     margin-top: 1em;
     @include bp(venus) {
@@ -7,7 +7,11 @@
     @include bp(earth) {
         @include inline-block;
         vertical-align: middle;
-        width: 50%;
+        width: 55%;
+    }
+    @include bp(mars) {
+        margin-top: 2em;
+        padding-right: 1em;
     }
     ul {
         padding: 0;
@@ -30,6 +34,9 @@
         }
         color: $primary;
         text-decoration: none;
+        &:hover {
+            color: white;
+        }
         &:before {
             width: 100%;
             left: 0;
@@ -38,15 +45,31 @@
 }
 [role="banner"] {
     margin: 1em;
-    & > img {
+    max-width: 88.88888888888889em;
+    @include bp(mars) {
+        margin: 1em auto;
+    }
+    &:after {
+        display: table;
+        clear: both;
+        content: "";
+    }
+    [itemprop="url"] {
+        display: block;
+        &:before {
+            display: none;
+        }
         @include bp(venus) {
             float: left;
-            width: 40%;
+            width: 37%;
         }
         @include bp(earth) {
-            width: 48%;
+            width: 45%;
             @include inline-block;
             vertical-align: middle;
+        }
+        @include bp(mars) {
+            padding-left: 1em;
         }
     }
 }

@@ -6,6 +6,7 @@ img {
 .aligncenter, .alignmiddle, .alignleft, .alignright {
 	margin: 1.1666em auto;
 	display: block;
+	max-width: 100%;
 	&:first-child {
 		margin-top: 0;
 	}
@@ -35,7 +36,7 @@ img[class*="align"], div[class*="align"] img {
 	background: white;
 	border: 2px solid $secondary;
 }
-.caption {
+.wp-caption {
 	border-bottom: 1px solid $light-grey-text;
 	font-size: 1em * nth($font-size, 7);
 	font-style: italic;
@@ -58,15 +59,16 @@ hr {
 }
 .col2 {
 	margin: 1em;
-	@include bp(venus){
+	padding-bottom: .5em;
+	@include bp(venus) {
 		margin: 1em 2.5%;
 		@include inline-block;
 		vertical-align: top;
-		max-width: 45%;
+		max-width: 44%;
 		p {
 			padding: 0 1em;
 		}
-		h2 {
+		h3 {
 			margin: .5em 18px;
 			margin: .5em 1rem;
 			&:first-child {
@@ -74,11 +76,22 @@ hr {
 			}
 		}
 	}
-	@include bp(earth){
+	@include bp(earth) {
 		width: 23em;
 		margin: 1em;
 	}
 	img {
 		width: 100%;
 	}
+}
+.home, .archive {
+	main {
+		text-align: center;
+		article {
+			text-align: left;
+		}
+	}
+}
+.single main, .page main {
+	margin: 0 1em;
 }

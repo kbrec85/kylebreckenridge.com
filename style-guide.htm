@@ -17,7 +17,7 @@
     <script src="<?php echo get_template_directory_uri();?>/assets/js/respond.min.js"></script>
     <![endif]-->
 </head>
-<body style="margin: 0 2em;"><div class="wrapper">
+<body>
     <section id="colors">
         <h2 class="title">Colors</h2>
         <div class="primary"></div><div class="secondary"></div><div class="tertiary"></div>
@@ -31,6 +31,7 @@
         <p class="body-italic">Body Text italic FF Dangy Pro - "ff-dagny-web-pro", Arial, "Helvetica Neue", Helvetica, sans-serif;</p>
         <p class="body-bold">Body Text bold FF Dangy Pro - "ff-dagny-web-pro", Arial, "Helvetica Neue", Helvetica, sans-serif;</p>
         <p class="body-bold-italic">Body Text bold italic FF Dangy Pro - "ff-dagny-web-pro", Arial, "Helvetica Neue", Helvetica, sans-serif;</p>
+    </section>
     <section id="headings">
         <h2 class="title">Headings</h2>
         <h1>1st Level heading</h1>
@@ -125,7 +126,7 @@
     </section>
     <section id="images">
         <h2 class="title">Images</h2>
-        <div class="caption alignleft" style="margin-top: 0;">
+        <div class="wp-caption alignleft" style="margin-top: 0;">
             <img src="http://fillmurray.com/300/200">
             <p>This is an image caption. It should be kept short, but can go longer if needed.</p>
         </div>
@@ -195,34 +196,35 @@ Prism.languages.css = {
         </p>
         <nav role="navigation">
             <ul>
-                <li><a href="#">Home</a></li><li><a href="#">About</a></li><li><a href="#">Blog</a></li><li><a href="#">Portfolio</a></li>
+                <li><a href="#">About</a></li><li><a href="#">Blog</a></li><li><a href="#">Portfolio</a></li><li><a href="#">Contact</a></li>
             </ul>
         </nav>
         <p><a href="#" class="btn">Button</a></p>
+        <h1 class="hero"><span data-icon="S">Website Design</span><span data-icon="V">Website Development</span><span data-icon="w">Wordpress</span></h1>
     </section>
     <section id="molecules">
         <h2 class="title">Molecules</h2>
         <div class="col2">
             <img src="http://fillmurray.com/600/250">
-            <h2>Article Title</h2>
+            <h3>Article Title</h3>
             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. <a href="#">Read More >></a></p>
         </div><div class="col2">
-            <h2>Article Title</h2>
+            <h3>Article Title</h3>
             <p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. <a href="#">Read More >></a></p>
         </div>
         <div class="col2">
             <img src="http://fillmurray.com/600/250">
-            <h2>Article Title</h2>
+            <h3>Article Title</h3>
             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. <a href="#">Read More >></a></p>
         </div><div class="col2">
             <img src="http://fillmurray.com/600/250">
-            <h2>Article Title</h2>
+            <h3>Article Title</h3>
             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. <a href="#">Read More >></a></p>
         </div>
         <footer class="sitefooter">
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li><li><a href="#">About</a></li><li><a href="#">Blog</a></li><li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About</a></li><li><a href="#">Blog</a></li><li><a href="#">Portfolio</a></li><li><a href="#">Contact</a></li>
                 </ul>
             </nav>
             <div class="col2">
@@ -246,15 +248,14 @@ Prism.languages.css = {
             <p>&copy; 2014 Kyle Breckenridge</p>
         </footer>
         <header role="banner">
-            <img src="images/KyleBreckenridge-logo.svg" alt="KyleBreckenridge.com Logo" />
+            <a href="#" itemprop="url"><img src="images/KyleBreckenridge-logo.svg" alt="KyleBreckenridge.com Logo" itemprop="logo" /></a>
             <nav role="navigation">
                 <ul>
-                    <li><a href="#">Home</a></li><li><a href="#">About</a></li><li><a href="#">Blog</a></li><li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About</a></li><li><a href="#">Blog</a></li><li><a href="#">Portfolio</a></li><li><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </header>
     </section>
-</div>
 <script src="assets/js/kylebreckenridge_com.js"></script>
 </body>
 </html>

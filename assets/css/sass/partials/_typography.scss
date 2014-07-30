@@ -7,6 +7,13 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $title-font-family;
     color: $primary;
     margin: 1em 0 .5em 0;
+    a {
+        color: $primary;
+        text-decoration: none;
+        &:hover {
+            color: $tertiary;
+        }
+    }
 }
 h1,h2,h3 {
     font-weight: 600;
@@ -14,42 +21,35 @@ h1,h2,h3 {
 h1 {
     margin-bottom: 1em;
     font-size: 1em * nth($font-size, 2);
-    @include bp(venus){
+    @include bp(venus) {
         font-size: 1em * nth($font-size, 1);
         text-align: center;
     }
 }
 h2 {
     font-size: 1em * nth($font-size, 3);
-    @include bp(venus){
+    @include bp(venus) {
         font-size: 1em * nth($font-size, 2);
     }
 }
 h3 {
     font-size: 1em * nth($font-size, 4);
-    @include bp(venus){
+    @include bp(venus) {
         font-size: 1em * nth($font-size, 3);
     }
 }
 h4 {
     font-size: 1em * nth($font-size, 5);
-    @include bp(venus){
+    @include bp(venus) {
         font-size: 1em * nth($font-size, 4);
     }
 }
 h5 {
     font-size: 1em * nth($font-size, 6);
-    @include bp(venus){
+    @include bp(venus) {
         font-size: 1em * nth($font-size, 5);
     }
 }
-h6 {
-    font-size: 1em * nth($font-size, 7);
-    @include bp(venus){
-        font-size: 1em * nth($font-size, 6);
-    }
-}
-
 blockquote {
     margin: 1.5em;
     font-family: $title-font-family;
@@ -74,18 +74,30 @@ blockquote {
     }
 }
 
-p,ul,ol,dl,pre,code {
+p,ul,ol,dl,pre,code,h6 {
     font-size: 1rem * nth($font-size, 7);
-    @include bp(venus){
+    max-width: 50em;
+    margin: {
+        left: auto;
+        right: auto;
+    }
+    @include bp(venus) {
         font-size: 1rem * nth($font-size, 6);
     }
 }
+[role="articleBody"], .gform_wrapper, .share {
+    max-width: 50em;
+    margin: {
+        left: auto;
+        right: auto;
+    }
+}
 
-a:not([data-icon]) {
+p a, ul a {
     color: $tertiary;
-    @include inline-block;
     position: relative;
     @include transition(color .3s .1s ease);
+    white-space: nowrap;
     &:before {
         position: absolute;
         background-color: $tertiary;
@@ -107,7 +119,7 @@ a:not([data-icon]) {
     }
 }
 
-a.btn {
+a.btn, input[type="submit"] {
     background-color: $tertiary;
     padding: .5em 2em;
     @include inline-block;
@@ -117,6 +129,7 @@ a.btn {
     color: white;
     @include transition(background-color .3s ease);
     text-decoration: none;
+    border: 0px;
     &:hover {
         background-color: $secondary;
     }
@@ -164,8 +177,16 @@ ul ul, ol ol {
 
 .byline {
     font-size: 1rem * nth($font-size, 8);
-    @include bp(venus){
+    @include bp(venus) {
         font-size: 1rem * nth($font-size, 7);
+    }
+    @include bp(earth) {
+        max-width: 50rem;
+    }
+    [data-icon]:before {
+        color: $light-grey-text;
+        margin-right: .2em;
+        font-size: 1em;
     }
 }
 .byline, .byline a {
@@ -174,7 +195,7 @@ ul ul, ol ol {
     margin-bottom: 0;
 }
 
-article > p:first-of-type:first-letter {
+p:first-child:first-letter {
     font-size: 3em;
     font-weight: bold;
     font-family: $title-font-family;
@@ -188,4 +209,10 @@ pre:not([class]), code:not([class]) {
     width: 100%;
     white-space: pre-wrap;
     word-wrap: break-word;
+}
+.share {
+    text-align: right;
+    a[data-icon] {
+        font-size: .75em;
+    }
 }

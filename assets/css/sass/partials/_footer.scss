@@ -1,7 +1,9 @@
 .sitefooter {
     border-top: 5px solid $primary;
+    text-align: center;
     .col2 {
         border-bottom: none;
+        text-align: left;
         a {
             font-size: .7em;
             @include bp(venus) {
@@ -17,7 +19,7 @@
         margin: 1em 1em 0 1em;
         ul {
             padding: 0;
-            margin: 0;
+            margin: 0 auto;
         }
         li {
             @include inline-block;
@@ -27,6 +29,9 @@
             padding: .5em 1em;
             color: $primary;
             text-decoration: none;
+            &:hover {
+                color: white;
+            }
             &:before {
                 left: 0;
                 right: 0;
