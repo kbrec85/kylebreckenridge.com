@@ -7,9 +7,9 @@
  */
  ?>
 
-<article>
+<article itemscope itemtype="https://schema.org/BlogPosting">
 	<header>
-		<h1><?php the_title(); ?></h1>
+		<h1 itemprop="headline"><?php the_title(); ?></h1>
 		<h6 class="byline">By <a href="https://plus.google.com/+KyleBreckenridge" rel="author" itemprop="author" target="_blank"><?php the_author_meta( 'display_name' );?></a> on <time datetime="<?php the_date('Y-m-d'); ?>" itemprop="datePublished"><?php the_time(get_option('date_format')); ?></time>
             <?php if(get_the_tag_list()) {
                 echo get_the_tag_list(' | <span itemprop="keywords" data-icon="T">',', ','</span>');
@@ -19,7 +19,7 @@
             }
             ?> | <a href="<?php the_permalink(); ?>" itemprop="url">permalink</a></h6>
 	</header>
-	<div role="articleBody">
+	<div itemprop="articleBody">
         <?php the_content(); ?>
     </div>
     <footer>

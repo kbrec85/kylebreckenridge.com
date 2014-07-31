@@ -86,7 +86,7 @@ p,ul,ol,dl,pre,code,h6 {
         font-size: 1rem * nth($font-size, 6);
     }
 }
-[role="articleBody"], .gform_wrapper, .share {
+[itemprop="articleBody"], .gform_wrapper, .share {
     max-width: 50em;
     margin: {
         left: auto;
