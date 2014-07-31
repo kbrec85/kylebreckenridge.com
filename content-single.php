@@ -30,6 +30,6 @@
     		<a href="http://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>&via=kbrec85" aria-hidden="true" data-icon="t" target="_blank"></a>
     		<a href="https://plus.google.com/share?url=<?php the_permalink(); ?>" aria-hidden="true" data-icon="g" target="_blank"></a>
     		<a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());" aria-hidden="true" data-icon="p" target="_blank"></a>
-    		<a href="mailto:someone@kylebreckenridge.com?subject=<?php the_title();?> - KyleBreckenridge.com&body=Check%20out%20this%20article%20I%20just%20read%20on%20kylebreckenridge.com:%20<?php echo $the_uri;?>" aria-hidden="true" data-icon="e"></a>
+    		<a href="mailto:someone@kylebreckenridge.com?subject=<?php the_title();?> - KyleBreckenridge.com&body=Check%20out%20this%20article%20I%20just%20read%20on%20kylebreckenridge.com:%20" aria-hidden="true" data-icon="e"></a>
     	</div>
 </article>

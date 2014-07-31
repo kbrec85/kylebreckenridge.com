@@ -627,7 +627,8 @@ h1, h2, h3, h4, h5, h6 {
       color: #9829e3; }
 
 h1, h2, h3 {
-  font-weight: 600; }
+  font-weight: 600;
+  word-wrap: break-word; }
 
 h1 {
   margin-bottom: 1em;
@@ -848,7 +849,7 @@ img {
       width: auto;
       margin: 1.1666em 0 1.1666em 1.1666em; } }
 
-img[class*="align"], div[class*="align"] img {
+img[class*="align"], div[class*="align"] img, .attachment-featured {
   padding: 5px;
   background: white;
   border: 2px solid #60c390; }
@@ -894,9 +895,7 @@ hr {
         padding: 0 1em; }
       .col2 h3 {
         margin: .5em 18px;
-        margin: .5em 1rem; }
-        .col2 h3:first-child {
-          margin-top: 0; } }
+        margin: .5em 1rem; } }
   @media (min-width: 64em) {
     .col2 {
       width: 23em;
@@ -904,13 +903,48 @@ hr {
   .col2 img {
     width: 100%; }
 
-.home main, .archive main {
+.home main, .archive main, .blog main {
   text-align: center; }
-  .home main article, .archive main article {
+  .home main article, .archive main article, .blog main article {
     text-align: left; }
 
 .single main, .page main {
   margin: 0 1em; }
+
+.home main {
+  margin: 0; }
+
+#colors div {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  margin: 1em 2.5%;
+  width: 28.33333333333333%;
+  height: 9.833333333333333em;
+  position: relative; }
+  #colors div:after {
+    display: block;
+    position: absolute;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    height: 1.5em;
+    bottom: 0; }
+  #colors div.primary {
+    background-color: #376d4f; }
+    #colors div.primary:after {
+      content: "#376d4f"; }
+  #colors div.secondary {
+    background-color: #60c390; }
+    #colors div.secondary:after {
+      content: "#60c390"; }
+  #colors div.tertiary {
+    background-color: #9829e3; }
+    #colors div.tertiary:after {
+      content: "#9829e3"; }
 
 nav[role="navigation"] {
   text-align: center;
@@ -1058,7 +1092,8 @@ textarea {
     white-space: nowrap;
     position: relative;
     color: white;
-    z-index: 10; }
+    z-index: 10;
+    margin-right: 0; }
     .hero span[data-icon]:before {
       color: #376d4f;
       color: rgba(55, 109, 79, 0.5);

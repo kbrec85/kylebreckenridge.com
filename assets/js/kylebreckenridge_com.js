@@ -1,9 +1,18 @@
-/*! KyleBreckenridge.com - v0.1.0 - 2014-07-24
+/*! KyleBreckenridge.com - v0.1.0 - 2014-07-30
  * http://www.kylebreckenridge.com
  * Copyright (c) 2014; * Licensed GPLv2+ */
-( function( window, undefined ) {
-	'use strict';
- } )( this );
+( function( $ ) {
+    $('a').bind('touchend', function(e){
+        e.preventDefault();
+        link = $(this).attr('href');
+        target = $(this).attr('target');
+        if(target){
+            window.open(link,target);
+        } else {
+            window.open(link);
+        }
+    })
+} )( jQuery );
 
 var self = (typeof window !== 'undefined') ? window : {};
 

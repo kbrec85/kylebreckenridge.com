@@ -35,9 +35,8 @@ define( '_KB__VERSION', '0.1.0' );
  }
  add_action( 'wp_enqueue_scripts', '_kb__scripts_styles' );
 
- add_theme_support( 'post-thumbnails' );
- add_image_size( 'featured', 440, 200, false );
-echo $test;
+add_theme_support( 'post-thumbnails' );
+add_image_size( 'featured', 440, 200, array( 'left', 'top' ) );
 function _kb__widgets_init() {
   register_sidebar( array(
     'name' => 'Default',

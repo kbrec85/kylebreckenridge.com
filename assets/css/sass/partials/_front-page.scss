@@ -21,6 +21,7 @@
         position: relative;
         color: white;
         z-index: 10;
+        margin-right: 0;
         &:before {
             color: $primary;
             color: rgba($primary, .5);

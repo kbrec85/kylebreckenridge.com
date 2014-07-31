@@ -6,6 +6,15 @@
  * Licensed under the GPLv2+ license.
  */
 
- ( function( window, undefined ) {
-	'use strict';
- } )( this );
+( function( $ ) {
+    $('a').bind('touchend', function(e){
+        e.preventDefault();
+        link = $(this).attr('href');
+        target = $(this).attr('target');
+        if(target){
+            window.open(link,target);
+        } else {
+            window.open(link);
+        }
+    })
+} )( jQuery );
