@@ -17,9 +17,10 @@
         <a href="https://www.facebook.com/pages/KyleBreckenridgecom/901395023209557" target="_blank" data-icon="f"></a>
         <a href="https://twitter.com/kbrec85" target="_blank" data-icon="t"></a>
         <a href="https://plus.google.com/+KyleBreckenridge" target="_blank" data-icon="g"></a>
+        <a href="http://www.linkedin.com/in/kylebreckenridge/" target="_blank" data-icon="l"></a>
         <a href="https://github.com/kbrec85" target="_blank" data-icon="h"></a>
+        <a href="http://codepen.io/kbrec85/" target="_blank" data-icon="n"></a>
         <a href="https://www.behance.net/kbrec85" target="_blank" data-icon="b"></a>
-        <a href="www.linkedin.com/in/kylebreckenridge/" target="_blank" data-icon="l"></a>
         <a href="/contact" data-icon="e"></a>
     </div>
     <div class="col2">
