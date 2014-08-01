@@ -16,6 +16,10 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/KyleBreckenridge-apple-icon.png"/>
+<link rel="apple-touch-icon-precomposed" href="icon" />
 <?php wp_head(); ?>
 <script type="text/javascript" src="//use.typekit.net/azz1znj.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
